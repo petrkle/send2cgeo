@@ -1,6 +1,6 @@
 {
   "name": "send2cgeo",
-  "version": "1.0",
+  "version": "1.1",
   "manifest_version": 2,
   "description": "send2cgeo",
 	"icons": { "16": "cgeo.png",
@@ -8,11 +8,11 @@
 					"128": "cgeo.png"	},
 	"content_scripts": [
 			{
-				"matches": ["*://*.geocaching.com/map/*"],
+				"matches": ["https://*.geocaching.com/map/*"],
 				"js": [ "send2cgeo.user.js"]
 			}
 		],
   "permissions": [
-    "http://geocaching.com/"
+    "https://geocaching.com/"
   ]
 }
